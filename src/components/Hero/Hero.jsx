@@ -30,7 +30,7 @@ const ImageList = [
 ]
 
 
-function Hero() {
+function Hero({handleOrderPopup}) {
   var settings = {
     dots: false,
     arrows: false,
@@ -71,7 +71,7 @@ function Hero() {
             data-aos-duration="500"
             data-aos-delat="300" 
             >
-              <button className='bg-gradient-to-r from-primary to to-secondary hover::scale-105 duration-200 text-white py-2 px-4 rounded-full'>
+              <button onClick={()=>handleOrderPopup()} className='bg-gradient-to-r from-primary to to-secondary hover::scale-105 duration-200 text-white py-2 px-4 rounded-full'>
                 Order Now
               </button>
             </div>

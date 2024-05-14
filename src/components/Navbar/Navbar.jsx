@@ -50,12 +50,12 @@ const DropdownLinks =[
     },
 ]
 
-function Navbar() {
+function Navbar({handleOrderPopup}) {
   return (
-    <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40'>
+    <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40 '>
         {/* uppper navbar */}
         <div className='bg-primary/40 py-2'>
-            <div className='container flex justify-between items-center'>
+            <div className='container flex justify-between items-center '>
                 {/* logo */}
                 <div>
                     <a href="#" className='font-bold text-2xl sm:text-3xl flex gap-2'>
@@ -65,7 +65,7 @@ function Navbar() {
                     </a>
                 </div>
                 {/* search bar and order button */}
-                <div className='flex justify-between items-center gap-4'>
+                <div className='flex justify-between  items-center gap-4'>
                     <div className='relative group hidden sm:block'>
                         <input type="text" placeholder='search' className='w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full px-2 py-1 border border-gray-300 focus:outline-none focus:border-1 focus:border-primary
                          ' />
@@ -74,7 +74,7 @@ function Navbar() {
                     </div>
                 
                 {/* order button  */}
-                <button onClick={()=>alert("Ordering not available yet")} className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'> 
+                <button onClick={()=>handleOrderPopup()} className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'> 
                     <span className='group-hover:block hidden transition-all duration-200'>Order</span>
                     <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer'/>
                 </button>
@@ -85,10 +85,10 @@ function Navbar() {
                 </div>
             <div/>
         </div>
-        {/* lower navbar */}
        
     </div>
-    <div className='flex justify-center '>
+    {/* lower navbar */}
+    <div  data-aos="zoom-in" className='flex justify-center '>
             <ul className='sm:flex hidden items-center gap-4'>
                 {
                     Menu.map((data)=>(

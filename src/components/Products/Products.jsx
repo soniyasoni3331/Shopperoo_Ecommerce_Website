@@ -81,6 +81,10 @@ function Products() {
                         </div>
                     </div>))}
                 </div>
+                {/* view all buttons */}
+                <div className='flex justify-center'>
+                    <button className='text-center mt-10 cursor-pointer bg-primary text-white px-5 rounded-md'>View All Button</button>
+                </div>
             </div>
         </div>
     </div>
