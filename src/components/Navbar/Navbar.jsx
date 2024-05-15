@@ -54,7 +54,7 @@ function Navbar({handleOrderPopup}) {
   return (
     <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40 '>
         {/* uppper navbar */}
-        <div className='bg-primary/40 py-2'>
+        <div className='bg-primary/40 py-2 '>
             <div className='container flex justify-between items-center '>
                 {/* logo */}
                 <div>
@@ -65,7 +65,7 @@ function Navbar({handleOrderPopup}) {
                     </a>
                 </div>
                 {/* search bar and order button */}
-                <div className='flex justify-between  items-center gap-4'>
+                <div className='flex justify-end items-center gap-2'>
                     <div className='relative group hidden sm:block'>
                         <input type="text" placeholder='search' className='w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full px-2 py-1 border border-gray-300 focus:outline-none focus:border-1 focus:border-primary
                          ' />
@@ -83,10 +83,10 @@ function Navbar({handleOrderPopup}) {
                     <DarkMode />
                 </div>
                 </div>
-            <div/>
         </div>
        
     </div>
+    
     {/* lower navbar */}
     <div  data-aos="zoom-in" className='flex justify-center '>
             <ul className='sm:flex hidden items-center gap-4'>

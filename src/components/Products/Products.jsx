@@ -51,7 +51,7 @@ const ProductsData= [
 ]
 function Products() {
   return (
-    <div className='mt-14 mb-12'>
+    <div className='mt-14 mb-20'>
         <div className='container'>
             {/* Header Section */}
             <div className='text-center mb-10 max-w-[600px] mx-auto'>
@@ -71,7 +71,7 @@ function Products() {
                     className='space-y-3'
                     >
 
-                        <img src={data.img} alt="" className='h-[200px] w-[150px] object-cover rounded-md' />
+                        <img src={data.img} alt="" className='h-[200px] w-[150px] object-cover rounded-md bg-primary/60' />
                         <h3 className='font-semibold'>{data.title}</h3>
                         <p className='text-sm text-gray-600'>{data.color}</p>
                         <div className='flex items-center gap-1'>
@@ -83,7 +83,7 @@ function Products() {
                 </div>
                 {/* view all buttons */}
                 <div className='flex justify-center'>
-                    <button className='text-center mt-10 cursor-pointer bg-primary text-white px-5 rounded-md'>View All Button</button>
+                    <button className='text-center mt-10 cursor-pointer bg-primary text-white px-5 py-2 rounded-md'>View All Button</button>
                 </div>
             </div>
         </div>

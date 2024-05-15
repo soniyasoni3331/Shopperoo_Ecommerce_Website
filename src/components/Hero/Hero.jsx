@@ -78,7 +78,7 @@ function Hero({handleOrderPopup}) {
             </div>
             {/* image section  */}
             <div className='order-1 sm:order-2'>
-              <div className='relative z-10'><img src={data.img} alt="" className='w-[300px] h-[300px] sm:h-[450px] sm:scale-125 
+              <div className='relative z-10'><img src={data.img} alt="" className='w-2/3 h-[400px] sm:h-[550px] sm:scale-125 
               lg:scale-120 object-contain mx-auto' /></div>
             </div>
             </div>
